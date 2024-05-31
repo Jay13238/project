@@ -5,7 +5,7 @@ import PortCard from "../components/PortCard";
 import PortData from "../array/portData";
 import Image from "next/image";
 import images from "../array/images";
-import ClientCard from "../components/clientCard";
+
 
 export default function Portfolio() {
   return (
@@ -37,8 +37,18 @@ export default function Portfolio() {
       <div className="mt-10">
         <h2 className="text-center mb-11">Working With Cients</h2>
         <div className="flex flex-wrap justify-center gap-4">
-          {images.map((image) => (
-            <ClientCard key={image.id} image={image.image} />
+          {images.map((props) => (
+            <div key={props.id} className="relative w-[300px] h-[300px]">
+              <Image
+                src={props.image}
+                fill
+                priority={true}
+                sizes="100vw"
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           ))}
         </div>
       </div>
