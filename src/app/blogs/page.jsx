@@ -4,6 +4,8 @@ import { sanityClient, urlFor } from "../lib/sanity";
 import Link from "next/link";
 import Button from "../components/Button";
 
+export const revalidate = 30;
+
 async function getBlogs() {
   const query = `
 *[_type =='blog'] | order(_createdAt desc) {

@@ -7,6 +7,8 @@ import { PortableText } from "next-sanity";
 import Link from "next/link";
 import Button from "@/app/components/Button"; // Assuming Button is a component in your project
 
+export const revalidate = 30 // revalidate at most every hour
+
 
 async function getData(slug) {
   const query = `*[_type =='blog' && slug.current == $slug ] {
