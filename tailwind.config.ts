@@ -21,7 +21,7 @@ const config: Config = {
         },
 
         hover: {
-          100: "#e2d4bf",
+          100: "#b99664",
         },
 
         accent: {

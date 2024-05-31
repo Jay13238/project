@@ -28,7 +28,7 @@ const packData = [
       "4 x horizontal image templates",
       "8 x Instagram highlight covers",
       "1 x Instagram carousel (up to 10 slides)",
-      "And More"
+      "And More",
     ],
     price: "R5000 ex VAT",
   },
@@ -47,14 +47,22 @@ const packData = [
     id: 4,
     image: "/photo.png",
     title: "Photo Packages",
-    includes: ["R3000 for a one-hour shoot", "R4400 for a two-hour shoot"],
+    includes: [
+      "R3000 for a one-hour shoot",
+      "R4400 for a two-hour shoot",
+      "Price Subject to Change",
+    ],
     price: "R5000 per month, ex VAT",
   },
   {
     id: 5,
     image: "/video-icon.png",
     title: "Video Packages",
-    includes: ["R3000 for a one-hour shoot", "R4400 for a two-hour shoot"],
+    includes: [
+      "R3000 for a one-hour shoot",
+      "R4400 for a two-hour shoot",
+      "Price Subject to Change",
+    ],
     price: "R5000 per month, ex VAT",
   },
   {
@@ -97,7 +105,6 @@ const packData = [
       "Consultation meeting with client in person or via Zoom 1 hour ~ R300",
       "Available to post your social media content on an ad hoc basis, as per your requirements",
       "graphic design",
-      
     ],
     price: " R500 set-up fee + R300 per hour ",
   },

@@ -128,11 +128,21 @@ export default function ContactForm() {
   };
 
   return (
-    <Container className="bg-white rounded-lg" py={7} px={6} w="100%" maxW="650px">
+    <Container
+      className="bg-white rounded-lg"
+      py={7}
+      px={6}
+      w="100%"
+      maxW="650px"
+    >
       <Heading as="h2" size="lg" mb={10} textAlign="center">
         Inquire Now
       </Heading>
-      {error && <Text textAlign="center" color="red.300">{error}</Text>}
+      {error && (
+        <Text textAlign="center" color="red.300">
+          {error}
+        </Text>
+      )}
 
       <FormControl isRequired isInvalid={touched.name && !values.name} mb={4}>
         <FormLabel htmlFor="name">Name</FormLabel>
@@ -233,6 +243,13 @@ export default function ContactForm() {
             >
               Brand Photography
             </Checkbox>
+            <Checkbox
+              name="services"
+              value="Soical Media"
+              onChange={handleCheckboxChange}
+            >
+              Social Media Needs
+            </Checkbox>
           </Stack>
         </CheckboxGroup>
       </Box>
@@ -259,13 +276,6 @@ export default function ContactForm() {
               Book a Consultation (I know what I would like to achieve, but not
               sure which services I need)
             </Checkbox>
-            <Checkbox
-              name="inquiryType"
-              value="rate-card"
-              onChange={handleCheckboxChange}
-            >
-              Request a rate card
-            </Checkbox>
           </Stack>
         </CheckboxGroup>
       </Box>
@@ -273,7 +283,9 @@ export default function ContactForm() {
       <Flex justify="center" mt={5}>
         <Button
           type="submit"
-          colorScheme="blue"
+          bg="#d0af7d"
+          color="white"
+          _hover={{ bg: "#b99664" }}
           isLoading={isLoading}
           disabled={!isFormValid || isLoading}
           onClick={onSubmit}

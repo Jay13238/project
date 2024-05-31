@@ -25,7 +25,7 @@ export default function Home() {
           id="overlay"
         ></div>
         {/* heading */}
-        <div className=" absolute bottom-[9%] w-[100%] mb-20 md:bottom-[30%] lg:bottom-[40%] ">
+        <div className=" absolute bottom-[9%] w-[100%] mb-20 md:bottom-[35%] lg:bottom-[35%] ">
           <h1 className=" relative text-white text-center px-1 ">
             Telling your brand story right
           </h1>
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
             <div className=" bg-white w-[360px]  md:w-[24rem] pt-7 pb-9 px-8  rounded-md shadow-lg hover:-translate-y-3 transition-transform duration-200 ">
               <img className="w-[50px] mb-4" src="./paid-ads.png" alt="" />
-              <h3 className="mb-4">Web Design </h3>
+              <h3 className="mb-4">Website Design </h3>
               <ul className=" list-inside list-disc pl-5 mb-14">
                 <li className="text-secondary font-medium">
                   Design and Development
@@ -136,19 +136,17 @@ export default function Home() {
       </section>
       <section className=" py-20 px-7 bg-white">
         <div className=" max-w-[40rem] mx-auto">
-          <h2 className="mb-10 text-center">Why Work With Me?</h2>
+          <h2 className="mb-10 text-center">Why Work With Us?</h2>
           <p className="mb-20 text-secondary font-semibold text-center">
-            I bring a personalized touch to every project, ensuring that your
-            unique needs and goals are not just met, but exceeded. With a wealth
-            of experience in branding, social media management, copywriting,
-            graphic design, and website development, I offer a comprehensive set
-            of skills to elevate your online presence. From crafting compelling
-            content to designing eye-catching visuals, I am committed to
-            delivering results that resonate with your audience and drive growth
-            for your business. When you choose to work with me, you're not just
-            getting a service; you're gaining a dedicated partner invested in
-            your success. Let's collaborate and create something remarkable
-            together.
+            We bring a wealth of experience in branding, social media
+            management, copywriting, graphic design, and website development to
+            craft a comprehensive strategy that caters to your unique needs. Our
+            team is passionate about creating compelling content and designing
+            eye-catching visuals that resonate with your audience and drive
+            growth for your businesses. When you choose us, you're gaining
+            dedicated partners invested in your success. Let's collaborate and
+            create something remarkable together. Schedule a free consultation
+            today!
           </p>
         </div>
 
@@ -157,9 +155,9 @@ export default function Home() {
             <h4>Innovative</h4>
             <h3 className="mb-3">Solutions </h3>
             <p className="text-secondary font-semibold">
-              Resourcefulness is my forte. I excel in finding innovative
-              solutions and making the most of available resources. With a
-              proactive mindset and creative approach, I navigate challenges
+              Our forte is resourcefulness. We excel in finding innovative
+              solutions and making the most of available resources. With
+              proactive mindsets and creative approaches, we navigate challenges
               efficiently, turning limitations into opportunities for success.
             </p>
           </div>
@@ -167,22 +165,22 @@ export default function Home() {
             <h4>Meaningful</h4>
             <h3 className="mb-3">Engagement</h3>
             <p className="text-secondary font-semibold">
-              I'm personable, fostering genuine connections through warmth,
+              We are personable, fostering genuine connections through warmth,
               empathy, and sincere engagement. Whether with colleagues or
-              clients, I create a welcoming atmosphere where collaboration
+              clients, we create welcoming atmospheres where collaboration
               thrives, prioritizing trust and understanding in every
               interaction.
             </p>
           </div>
-          
+
           <div className=" border-l-2 pl-5 mb-10 py-4 lg:w-[420px]">
             <h4>Tangible</h4>
             <h3 className="mb-3">Outcomes</h3>
             <p className="text-secondary font-semibold">
-              I am result-driven. With a focus on achieving tangible outcomes, I
+              We are result-driven. Focused on achieving tangible outcomes, we
               approach every task with determination and purpose. Guided by
-              clear objectives, I strive to deliver impactful results that make
-              a difference. From project inception to completion, I remain
+              clear objectives, we strive to deliver impactful results that make
+              a difference. From project inception to completion, we remain
               committed to driving success and exceeding expectations.
             </p>
           </div>

@@ -40,7 +40,7 @@ export default function Footer() {
           </Link>
           <Link
             className="text-secondary font-semibold"
-            href={"/privacy-policy"}
+            href={"/policy"}
           >
             Privacy Policy
           </Link>
