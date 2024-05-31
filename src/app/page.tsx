@@ -34,28 +34,30 @@ export default function Home() {
       <section className="pt-2  bg-accent-100 lg:flex justify-between lg:pt-0 ">
         <div className=" pl-1 pr-1 sm:mx-20 lg:ml-[4rem] lg:w-[55%] md:mx-[4rem] 2xl:mx-[20rem] px-8">
           <h2 className="mb-6 md:my-10 mt-3   lg:mt-[6rem] lg:mb-8">
-            What I Do
+            What We Do
           </h2>
           <p className="mb-14 text-secondary font-medium">
-            With a passion for creativity and a keen eye for detail, I am
-            dedicated to helping businesses thrive in the digital landscape. My
+            With a passion for creativity and a keen eye for detail, we are
+            dedicated to helping businesses thrive in the digital landscape. Our
             expertise spans across branding, social media management,
             copywriting, graphic design, and website development. Armed with
-            years of experience and a commitment to excellence, I tailor
+            years of experience and a commitment to excellence, we tailor
             solutions to meet the unique needs of each client. Whether it's
             crafting compelling content, designing captivating visuals, or
-            optimizing online presence, I am driven by the goal of achieving
+            optimizing online presence, we are driven by the goal of achieving
             tangible results and exceeding expectations.
             <br />
-            <br />I offer a comprehensive suite of services to elevate your
-            brand and online presence. From expert branding and social media
-            coaching to hands-on management and custom templates, I've got your
-            social media covered. Enhance your visibility with targeted social
-            media and Google Ads, while my skilled copywriting and editing
-            ensure your message is clear and compelling. My graphic design,
-            photo, and video packages bring your vision to life, and my SEO and
-            website solutions optimize your digital footprint. Let me help you
-            connect with your audience and grow your business.
+            <br />
+            We offer a comprehensive suite of services to elevate your brand and
+            online presence. From expert branding and social media coaching to
+            hands-on management and custom templates, our team has you covered
+            on all things social media. Increase your visibility with targeted
+            social media and Google Ads campaigns, while our skilled copywriters
+            and editors ensure your message is clear and compelling. Our graphic
+            designers, photographers, and videographers bring your vision to
+            life, and our SEO specialists and web developers optimize your
+            digital footprint. Let us help you connect with your audience and
+            grow your business.
           </p>
           <div className="pb-8 md:pb-20 lg:mb-0">
             <Link href="/about">
