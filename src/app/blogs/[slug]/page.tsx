@@ -6,20 +6,7 @@ import Link from "next/link";
 import Button from "@/app/components/Button"; // Assuming Button is a component in your project
 import { Metadata } from "next";
 
-export async function generateStaticParams(slug: any) {
-  const query = `*[_type =='blog' && slug.current == $slug ] {
-    title,
-    slug,
-    titleImage,
-    content,
-    releaseDate,
-    smallDescription,
-    "currentSlug": slug.current,
-  }[0]`;
 
-  const data = await sanityClient.fetch(query, { slug });
-  return data ? data.currentSlug : null;
-}
 
 
 // @ts-ignore
