@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { sanityClient, urlFor } from "@/app/lib/sanity";
 import Image from "next/image";
@@ -9,7 +6,7 @@ import Link from "next/link";
 import Button from "@/app/components/Button"; // Assuming Button is a component in your project
 import { Metadata } from "next";
 
-export async function genertateStaticParams(slug:any) {
+export async function generateStaticParams(slug: any) {
   const query = `*[_type =='blog' && slug.current == $slug ] {
     title,
     slug,
@@ -21,13 +18,13 @@ export async function genertateStaticParams(slug:any) {
   }[0]`;
 
   const data = await sanityClient.fetch(query, { slug });
-  return data.map(({slug}:any) => slug)
+  return data.map(({ slug }: any) => slug);
 }
 
 // @ts-ignore
 export const revalidate = 30; // revalidate at most every hour
-// @ts-ignore
-async function getData(slug) {
+
+async function getData(slug: any) {
   const query = `*[_type =='blog' && slug.current == $slug ] {
     title,
     slug,
@@ -55,18 +52,15 @@ async function getBlogs() {
   const blogPosts = await sanityClient.fetch(query);
   return blogPosts;
 }
- // @ts-ignore
-export async function generateMetadata({params}): Promise<Metadata> {
- 
+
+// @ts-ignore
+export async function generateMetadata({ params }): Promise<Metadata> {
   const data = await getData(params.slug);
   return {
     title: data.title,
     description: data.smallDescription,
-
   };
 }
-
-
 
 // @ts-ignore
 export default async function Article({ params }) {
@@ -106,8 +100,7 @@ export default async function Article({ params }) {
         <h2 className="text-center mt-16 mb-10">Check Out Our Other Blogs</h2>
       </div>
       <div className="flex flex-wrap justify-center gap-4 mb-6">
-        
-        {blogPosts.map((post:any, idx:any) => (
+        {blogPosts.map((post: any, idx: any) => (
           <div
             className="w-[365px] h-[580px] bg-accent-100 rounded-lg pb-5 relative"
             key={idx}
