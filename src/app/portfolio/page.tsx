@@ -5,14 +5,14 @@ import PortCard from "../components/PortCard";
 import PortData from "../array/portData";
 import Image from "next/image";
 import images from "../array/images";
-import { Metadata as NextMetadata } from "next";
+import { Metadata  } from "next";
 
- const Metadata: NextMetadata = {
+ const metadata: Metadata = {
   title: "Portfolio | Creative Cate",
   description:
     "Dive into a showcase of my portfolio, where creativity meets functionality to bring brands to life. ",
 };
-export {Metadata}
+export { metadata }
 
 
 export default function Portfolio() {
