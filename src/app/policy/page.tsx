@@ -1,15 +1,15 @@
 import React from "react";
-import { Metadata } from "next";
+import { Metadata as NextMetadata } from "next";
 
-export const Metadata = {
+export const metadata: NextMetadata = {
   title: "Privacy Policy | Creative Cate",
- description: "Creative Cate's Privacy Policy",
+  description: "Creative Cate's Privacy Policy",
 };
 
-export default function page() {
+const PrivacyPolicyPage = () => {
   return (
-    <div className="pt-[180px] ">
-      <div className=" px-[2rem] md:px-[6rem] bg-white ">
+    <div className="pt-[180px]">
+      <div className="px-[2rem] md:px-[6rem] bg-white">
         <h1 className="text-secondary mb-7">Privacy Policy</h1>
         <h2 className="mb-4">Introduction</h2>
         <p className="mb-4">
@@ -89,7 +89,7 @@ export default function page() {
         <h2 className="mb-4">Data Security</h2>
         <p className="mb-4">
           We use appropriate security measures to protect your personal
-          information from accidental loss, unauthorised access, use,
+          information from accidental loss, unauthorized access, use,
           alteration, and disclosure. However, no internet or email transmission
           is ever fully secure or error-free. Please take special care in
           deciding what information you send to us via email.
@@ -97,8 +97,9 @@ export default function page() {
         <h2 className="mb-4">Data Retention</h2>
         <p className="mb-4">
           We will only retain your personal information for as long as necessary
-          to fulfil the purposes we collected it for, including for the purposes
-          of satisfying any legal, accounting, or reporting requirements.
+          to fulfill the purposes we collected it for, including for the
+          purposes of satisfying any legal, accounting, or reporting
+          requirements.
         </p>
         <h2 className="mb-4">Your Rights</h2>
         <p className="mb-4">
@@ -111,7 +112,7 @@ export default function page() {
           <li>Request erasure of your personal data.</li>
           <li>Object to processing of your personal data.</li>
           <li>Request restriction of processing your personal data.</li>
-          <li>Request transfer of your personal data</li>
+          <li>Request transfer of your personal data.</li>
           <li>
             Withdraw consent at any time where we are relying on consent to
             process your personal data.
@@ -130,4 +131,6 @@ export default function page() {
       </div>
     </div>
   );
-}
+};
+
+export default PrivacyPolicyPage;

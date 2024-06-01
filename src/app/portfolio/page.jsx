@@ -13,6 +13,8 @@ export const Metadata = {
     "Dive into a showcase of my portfolio, where creativity meets functionality to bring brands to life. ",
 };
 
+
+
 export default function Portfolio() {
   return (
     <div className="pt-40 pb-36 -z-10">
@@ -48,6 +50,7 @@ export default function Portfolio() {
               <Image
                 src={props.image}
                 fill
+                alt="Clients"
                 priority={true}
                 sizes="100vw"
                 style={{
