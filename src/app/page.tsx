@@ -1,9 +1,17 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { Metadata } from "next";
 
 import Button from "./components/Button";
 import VideoHead from "./components/VideoHead";
+
+export const metadata: Metadata = {
+  title: "Home | Creative Cate",
+  description:
+    "Creative Cate is a creative agency that specializes in branding, marketing, and web development. Our team of creative professionals is dedicated to delivering high-quality work that meets your needs.",
+
+}
+
 export default function Home() {
   return (
     <main>

@@ -27,10 +27,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/blogs/page.jsx",
+    "src/app/blogs/page.tsx",
     "src/app/components/NavScroll.tsx",
     "src/app/components/ContactForm.jsx",
     "src/app/api/route.js"
-  ],
+, "src/app/blogs/[slug]/page.tsx"  ],
   "exclude": ["node_modules"]
 }

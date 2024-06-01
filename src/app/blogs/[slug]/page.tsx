@@ -1,4 +1,5 @@
-//this is new
+
+
 
 import React from "react";
 import { sanityClient, urlFor } from "@/app/lib/sanity";
@@ -6,10 +7,26 @@ import Image from "next/image";
 import { PortableText } from "next-sanity";
 import Link from "next/link";
 import Button from "@/app/components/Button"; // Assuming Button is a component in your project
+import { Metadata } from "next";
 
-export const revalidate = 30 // revalidate at most every hour
+export async function genertateStaticParams(slug:any) {
+  const query = `*[_type =='blog' && slug.current == $slug ] {
+    title,
+    slug,
+    titleImage,
+    content,
+    releaseDate,
+    smallDescription,
+    "currentSlug": slug.current,
+  }[0]`;
 
+  const data = await sanityClient.fetch(query, { slug });
+  return data.map(({slug}:any) => slug)
+}
 
+// @ts-ignore
+export const revalidate = 30; // revalidate at most every hour
+// @ts-ignore
 async function getData(slug) {
   const query = `*[_type =='blog' && slug.current == $slug ] {
     title,
@@ -38,7 +55,20 @@ async function getBlogs() {
   const blogPosts = await sanityClient.fetch(query);
   return blogPosts;
 }
+ // @ts-ignore
+export async function generateMetadata({params}): Promise<Metadata> {
+ 
+  const data = await getData(params.slug);
+  return {
+    title: data.title,
+    description: data.smallDescription,
 
+  };
+}
+
+
+
+// @ts-ignore
 export default async function Article({ params }) {
   const data = await getData(params.slug);
   const blogPosts = await getBlogs();
@@ -55,6 +85,7 @@ export default async function Article({ params }) {
             fill
             sizes="100vw"
             priority
+            alt={data.title}
             style={{
               objectFit: "cover",
             }}
@@ -75,7 +106,8 @@ export default async function Article({ params }) {
         <h2 className="text-center mt-16 mb-10">Check Out Our Other Blogs</h2>
       </div>
       <div className="flex flex-wrap justify-center gap-4 mb-6">
-        {blogPosts.map((post, idx) => (
+        
+        {blogPosts.map((post:any, idx:any) => (
           <div
             className="w-[365px] h-[580px] bg-accent-100 rounded-lg pb-5 relative"
             key={idx}
@@ -84,6 +116,7 @@ export default async function Article({ params }) {
               <Image
                 src={urlFor(post.titleImage).url()}
                 fill
+                alt={post.title}
                 sizes="100vw"
                 style={{
                   objectFit: "cover",

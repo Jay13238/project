@@ -2,6 +2,13 @@ import React from "react";
 import Image from "next/image";
 import Button from "../components/Button";
 import { FaQuoteLeft } from "react-icons/fa";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Creative Cate",
+  description:
+    "With a passion for creativity and a keen eye for detail, we are dedicated to helping businesses thrive in the digital landscape. Our expertise spans across branding, social media management, copywriting, graphic design, and website development. ",
+};
 
 export default function About() {
   return (

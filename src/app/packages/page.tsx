@@ -4,6 +4,13 @@ import Button from "../components/Button";
 import ContactForm from "../components/ContactForm";
 import PackCard from "../components/PackCard";
 import packData from "../array/packData";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Packages | Creative Cate",
+  description:
+    "Explore a range of tailored solutions designed to elevate your brand and online presence. ",
+};
 
 export default function Packages() {
   return (

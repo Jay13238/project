@@ -3,7 +3,13 @@ import Image from "next/image";
 import { sanityClient, urlFor } from "../lib/sanity";
 import Link from "next/link";
 import Button from "../components/Button";
+import { Metadata as NextMetadata } from "next";
 
+export const metadata: NextMetadata = {
+  title: "Blogs | Creative Cate",
+  description:
+    "Explore a world of insightful narratives and enriching perspectives by delving into the captivating array of blogs on our website. ",
+};
 export const revalidate = 30;
 
 async function getBlogs() {
@@ -25,7 +31,7 @@ async function getBlogs() {
 export default async function page() {
   const data = await getBlogs();
 
-  console.log(data);
+
   return (
     <section className="pt-[150px] bg-accent-200">
       <div>
@@ -44,8 +50,8 @@ export default async function page() {
           possibilities
         </p>
       </div>
-      <div className=" pt-20 grid grid-cols-1 md:grid-cols-2 md:mx-[8%] lg:grid-cols-3 lg:mx-[10%] xl:grid-cols-4  px-8 gap-4 ">
-        {data.map((post, idx) => (
+      <div className=" pt-20 grid grid-cols-1 md:grid-cols-2 md:mx-[8%] lg:grid-cols-2 lg:mx-[4%] xl:grid-cols-3   gap-4 ">
+        {data.map((post:any, idx:any) => (
           <div
             className="w-[400px] h-[510px] bg-white rounded-lg  relative mb-10 "
             key={idx}
@@ -54,6 +60,7 @@ export default async function page() {
               <Image
                 src={urlFor(post.titleImage).url()}
                 fill
+                alt={post.title}
                 sizes="100vw"
                 style={{
                   objectFit: "cover",

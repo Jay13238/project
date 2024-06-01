@@ -1,4 +1,10 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const Metadata = {
+  title: "Privacy Policy | Creative Cate",
+ description: "Creative Cate's Privacy Policy",
+};
 
 export default function page() {
   return (
