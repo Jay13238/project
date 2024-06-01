@@ -18,8 +18,9 @@ export async function generateStaticParams(slug: any) {
   }[0]`;
 
   const data = await sanityClient.fetch(query, { slug });
-  return data.map(({ slug }: any) => slug);
+  return data ? data.currentSlug : null;
 }
+
 
 // @ts-ignore
 export const revalidate = 30; // revalidate at most every hour
