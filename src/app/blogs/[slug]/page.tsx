@@ -51,7 +51,7 @@ async function getBlogs() {
     }`;
 
   const blogPosts = await sanityClient.fetch(query);
-  return blogPosts;
+  return blogPosts || []; // Ensure blogPosts is an array, or default to an empty array
 }
 
 // @ts-ignore
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 // @ts-ignore
 export default async function Article({ params }) {
   const data = await getData(params.slug);
-  const blogPosts = await getBlogs();
+  const blogPosts = (await getBlogs()) || [];
 
   return (
     <div>
