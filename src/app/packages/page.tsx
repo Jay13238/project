@@ -4,20 +4,20 @@ import Button from "../components/Button";
 import ContactForm from "../components/ContactForm";
 import PackCard from "../components/PackCard";
 import packData from "../array/packData";
+import { Metadata } from "next";
 
-import Head from "next/head";
+
+const metadata: Metadata = {
+  title: "Packages | Creative Cate", 
+description: "Explore a range of tailored solutions designed to elevate your brand and online presence."
+}
+export {metadata}
 
 
 export default function Packages() {
   return (
     <div className="pt-[117px] -z-10">
-      <Head>
-        <title>Packages | Creative Cate</title>
-        <meta
-          name="description"
-          content="Explore a range of tailored solutions designed to elevate your brand and online presence."
-        />
-      </Head>
+      
       <section className="block lg:flex justify-between lg:pt-0 ">
         <div className="flex flex-col justify-center mb-8 px-4 md:mx-[5rem] lg:mx-[4rem] lg:w-[50%] 2xl:mx-[20rem]">
           <h2 className="mb-6 md:my-10  lg:mb-8">Our Packages</h2>
