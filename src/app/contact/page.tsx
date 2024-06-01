@@ -11,7 +11,7 @@ export { metadata };
 
 function contact() {
   return (
-    <div className="pt-[117px]">
+    <div className="pt-[140px]">
       <h1 className="text-center text-secondary mt-8 mb-6">Contact Us Here</h1>
       <p className="text-center mx-[5rem] mb-10">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas porro
