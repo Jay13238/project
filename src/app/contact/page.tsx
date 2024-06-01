@@ -1,5 +1,12 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import { Metadata as NextMetadata } from "next";
+
+export const Metadata: NextMetadata = {
+  title: "Contact Us | Creative Cate",
+  description:
+    "Contact Us Here",
+};
 
 function contact() {
   return (
