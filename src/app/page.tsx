@@ -39,7 +39,7 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <section className="pt-2  bg-accent-100 lg:flex justify-between lg:pt-0 ">
+      <section className="pt-2 px-8  bg-accent-100 lg:flex justify-between lg:pt-0 ">
         <div className=" pl-1 pr-1 sm:mx-20 lg:ml-[4rem] lg:w-[55%] md:mx-[4rem] 2xl:mx-[20rem] px-8">
           <h2 className="mb-6 md:my-10 mt-3   lg:mt-[6rem] lg:mb-8">
             What We Do

@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div className="lg:pt-[117px]">
       <section className="pt-36 block lg:flex justify-between lg:pt-0 ">
-        <div className=" px-4 md:mx-[5rem] lg:mx-[3rem] lg:w-[55%] 2xl:mx-[20rem] my-auto">
+        <div className=" px-8 md:px-4 md:mx-[5rem] lg:mx-[3rem] lg:w-[55%] 2xl:mx-[20rem] my-auto">
           <h2 className="mb-6  font-medium lg:mb-8">What We Do</h2>
           <p className="mb-14 text-secondary font-medium">
             With a passion for creativity and a keen eye for detail, we are
@@ -138,7 +138,7 @@ export default function About() {
               </p>
             </div>
             <div className=" border-l border-sub-DEFUALT pl-5 mb-10 py-4 pr-10 lg:w-[420px]">
-              <h4>Focusing on</h4>
+              <h4>Focus on</h4>
               <h3 className="mb-3">What Matters</h3>
               <p className="text-secondary font-semibold">
                 Choose us for streamlined solutions that cut through the noise.

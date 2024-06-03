@@ -30,7 +30,7 @@ export default function PackCard(props) {
   ));
 
   return (
-    <div className=" bg-white w-[300px] lg:w-[280px] xl:w-[360px] flex flex-col p-8  rounded-xl overflow-hidden">
+    <div className=" bg-white w-[300px] lg:w-[280px] xl:w-[360px] flex flex-col  p-8  rounded-xl overflow-hidden">
       <div className="h-[240px]">
         <div className="relative w-[60px] h-[60px] mx-auto mb-5">
           <Image

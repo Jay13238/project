@@ -106,12 +106,12 @@ export default function ContactForm() {
         setState(initState);
         setTouched({});
         toast({
-          title: "message sent.",
+          title: "Message Sent. We Will be in Touch Soon ",
           status: "success",
           duration: 2000,
           isClosable: true,
           position: "top",
-        })
+        });
       } else {
         // Handle errors
         throw new Error("Failed to submit form");

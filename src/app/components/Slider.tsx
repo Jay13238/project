@@ -22,7 +22,7 @@ function Slider() {
     fetchImages();
 
     // Start auto-scrolling when component mounts
-    const intervalId = setInterval(goToNext, 5000); // Change the interval time as needed
+    const intervalId = setInterval(goToNext, 6000); // Change the interval time as needed
 
     // Clear the interval when component unmounts
     return () => clearInterval(intervalId);

@@ -19,7 +19,7 @@ export default function Packages() {
     <div className="pt-[117px] -z-10">
       
       <section className="block lg:flex justify-between lg:pt-0 ">
-        <div className="flex flex-col justify-center mb-8 px-4 md:mx-[5rem] lg:mx-[4rem] lg:w-[50%] 2xl:mx-[20rem]">
+        <div className="flex flex-col justify-center mb-8 px-8 md:px-4 md:mx-[5rem] lg:mx-[4rem] lg:w-[50%] 2xl:mx-[20rem]">
           <h2 className="mb-6 md:my-10  lg:mb-8">Our Packages</h2>
           <p className="mb-14 text-secondary font-medium">
             Explore a range of tailored solutions designed to elevate your brand
@@ -50,7 +50,7 @@ export default function Packages() {
 
       <section className="bg-accent-100 px-5 py-[9rem]  ">
         <div className="mx-auto">
-          <div className="  grid md:mx-[3rem] md:grid-cols-[repeat(2,_minmax(0,_500px))]  xl:mx-[10%] 2xl:mx-[27%]  lg:grid-cols-[repeat(3,_minmax(0,_500px))] gap-y-8 ">
+          <div className=" flex flex-wrap justify-center md:grid md:mx-[3rem] md:grid-cols-[repeat(2,_minmax(0,_500px))]  xl:mx-[10%] 2xl:mx-[27%]  lg:grid-cols-[repeat(3,_minmax(0,_500px))] gap-y-8 ">
             {packData.map((packData) => (
               <PackCard
                 key={packData.id}

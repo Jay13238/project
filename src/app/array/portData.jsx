@@ -105,8 +105,7 @@ const portData = [
     id: 16,
     image: "/awr.png",
     title: "Adventis World Radio",
-    description:
-      "Creation and Management of AWR",
+    description: "Creation of Adventis World Radio's Brand and Website",
   },
 ];
 
