@@ -1,7 +1,7 @@
 export const gallery = {
   name: "gallery",
-  type: "object",
-  title: "Gallery",
+  type: "document",
+  title: "gallery",
   fields: [
     {
       name: "images",
